@@ -1,18 +1,18 @@
-from __future__ import division
-from Tkinter import*
+from __future__ import division            #importing modules
+from Tkinter import*            #importing modules
 
 
-def iCalc(source,side):
+def iCalc(source,side):               #defining icalc
     storeObj = Frame(source,borderwidth=1,bd=4,bg="powder blue")
     storeObj.pack(side=side,expand=YES,fill=BOTH)
     return storeObj
 
-def button(source , side ,text,command=None):
+def button(source , side ,text,command=None):         #defining button
     storeObj = Button(source , text=text , command=command)
     storeObj.pack(side = side,expand=YES , fill=BOTH)
     return storeObj    
 
-class app(Frame):
+class app(Frame):                 #creating a class namedas app
     def __init__(self):
         Frame.__init__(self)
         self.option_add('*Font' , 'arial 20 bold')
@@ -51,5 +51,5 @@ class app(Frame):
 
 
 if __name__=='__main__':
-    app().mainloop()
+    app().mainloop()        #running the app
         
